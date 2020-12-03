@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pp"></p>
+
+    <script>        
+        var x=prompt("Enter first number :");
+        var y=prompt("Enter second number :");
+        var z=prompt("Enter an operator among  +,  -,  /,  *  of your choice :");        
+        var result;
+        switch (z) {
+            case '+':
+            result = x+y;
+            break;
+            case '-':
+            result = x-y;
+            break;
+            case '/':
+            result = x/y;
+            break;
+            case '*':
+            result = x*y;
+            break; 
+            default:
+            result="Please input the correct values and specified operator";
+            }
+            document.getElementById("pp").innerHTML = result;
+    </script>    
+</body>
+</html>
